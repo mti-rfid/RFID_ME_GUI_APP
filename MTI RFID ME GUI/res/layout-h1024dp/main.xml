@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<FrameLayout android:id="@+id/TagLayout"
+	     android:layout_height="0dp"
+	     android:layout_width="match_parent"
+	     android:layout_weight="9" >
+	</FrameLayout>
+	<FrameLayout android:id="@+id/DetailLayout"
+		style="@style/outlineLayout"
+		android:layout_height="0dp"
+		android:layout_width="match_parent"
+		android:layout_weight="10"
+		android:padding="2dp">
+	</FrameLayout>
+
+	<TextView android:id="@+id/tv_usbstate"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Disconnected" />
+
+</LinearLayout>

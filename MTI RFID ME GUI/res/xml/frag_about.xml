@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:key="about_title" android:layout="@layout/about_title" android:selectable="false"></Preference>
+    <Preference android:key="about_company" android:title="@string/about_company" android:summary="@string/about_company_sum"></Preference>
+    <Preference android:key="about_address" android:title="@string/about_address" android:summary="@string/about_address_sum"></Preference>
+    <Preference android:key="about_tel" android:title="@string/about_tel" android:summary="@string/about_tel_sum"></Preference>
+    <Preference android:summary="@string/about_web_sum" android:key="about_web" android:title="@string/about_web"></Preference>
+    <Preference android:summary="@string/about_sw_ver_sum" android:key="about_sw_ver" android:title="@string/about_sw_ver"></Preference>
+    <Preference android:key="about_reader_sn" android:title="@string/about_reader_sn"/>
+</PreferenceScreen>

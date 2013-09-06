@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.mti.rfid.minime"
+<<<<<<< HEAD:MTI RFID ME GUI/AndroidManifest.xml
+      android:versionCode="9"
+=======
+      android:versionCode="10"
+>>>>>>> v1.5.1 release:MTI RFID ME GUI/AndroidManifest.xml
+      android:versionName="@string/about_sw_ver_sum" android:installLocation="auto">
+    <uses-sdk android:minSdkVersion="13" />
+    <uses-feature android:name="android.hardware.usb.host"></uses-feature>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.SET_ORIENTATION"/>
+
+    <application android:label="@string/app_name"
+        android:icon="@drawable/mti_rfid_logo"
+        android:name="com.mti.rfid.minime.UsbCommunication">
+        <activity android:name=".RfidContainer"
+                  android:label="@string/app_name"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="fullSensor"
+                  android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter"/>
+        </activity>
+
+    </application>
+</manifest>

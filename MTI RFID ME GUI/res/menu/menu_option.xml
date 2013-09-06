@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_tag" android:title="@string/item_tag" android:showAsAction="ifRoom"></item><item android:id="@+id/item_config"
+    	android:title="@string/item_config"
+    	android:showAsAction="never">
+    </item>
+    <item android:id="@+id/item_about"
+    	android:title="@string/item_about"
+    	android:showAsAction="never">
+    </item>
+    <item android:id="@+id/item_quit"
+    	android:title="@string/item_quit"
+    	android:showAsAction="never">
+    </item>
+    
+</menu>

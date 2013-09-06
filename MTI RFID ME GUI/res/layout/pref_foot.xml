@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="horizontal"
+	android:id="@+id/cfg_foot">
+    <Button android:layout_height="wrap_content"
+        android:id="@+id/btn_set"
+        android:text="@string/btn_set"
+        android:layout_weight="1"
+        android:layout_width="0dp">
+    </Button>
+    <Button android:layout_height="wrap_content"
+        android:id="@+id/btn_get"
+        android:text="@string/btn_get"
+        android:layout_width="0dp"
+        android:layout_weight="1">
+    </Button>
+</LinearLayout>

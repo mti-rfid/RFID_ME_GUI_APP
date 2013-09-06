@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pwd_type">
+        <item>Kill</item>
+        <item>Access</item>
+    </string-array>
+    <string-array name="lock_mem">
+        <item>Kill Password</item>
+        <item>Access Password</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>User</item>
+    </string-array>
+    <string-array name="lock_act">
+        <item>Accessible / Writable</item>
+        <item>Always Accessible / Writable</item>
+        <item>Password Accessible / Writable</item>
+        <item>Always Not Accessible / Writable</item>
+    </string-array>
+    <string-array name="nxp_cmd">
+        <item>Set Read Protect</item>
+        <item>Unset Read Protect</item>
+        <item>Chage EAS On</item>
+        <item>Change EAS Off</item>
+<!--
+        <item>Trigger EAS Alarm</item>
+        <item>Change Config</item>
+  -->
+    </string-array>
+    <string-array name="cfg_tag_mode">
+        <item>Gen 2</item>
+        <item>Gen 2 + RSSI</item>
+        <item>ISO 6B</item>
+    </string-array><string-array name="cfg_region">
+        <item>United State / Canada</item>
+        <item>Europe (ETSI EN 302 208)</item>
+        <item>Taiwan</item>
+        <item>China</item>
+        <item>South Korea</item>
+        <item>Australia / New Zealand</item>
+        <item>Europe (ETSI EN 300 220)</item>
+        <item>Brazil</item>
+        <item>Hong Kong</item>
+        <item>Malaysia</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Israel</item>
+        <item>Russia Federation</item>
+        <item>India</item>
+        <item>Saudi Arabia</item>
+        <item>Jordan</item>
+        <item>Mexico</item>
+    </string-array>
+    
+    <string-array name="cfg_link_frequency">
+        <item>40</item>
+        <item>160</item>
+        <item>213</item>
+        <item>256</item>
+        <item>320</item>
+        <item>640</item>
+    </string-array>
+    <string-array name="cfg_session">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+        <item>SL</item>
+    </string-array>
+    <string-array name="cfg_coding">
+        <item>FM0</item>
+        <item>Miller 2</item>
+        <item>Miller 4</item>
+        <item>Miller 8</item>
+    </string-array>
+</resources>
