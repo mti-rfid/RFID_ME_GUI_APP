@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MTI MINI ME</string>
+    <string name="btn_inventory">Run Inventory</string><string name="item_tag">INVENTORY</string>
+    <string name="item_config">CONFIG</string>
+    <string name="item_about">ABOUT</string>
+    <string name="item_quit">X</string>
+    <string name="epc_title">EPC</string>
+    <string name="epc_submit">Set</string>
+    <string name="epc_length">EPC Length</string>
+    <string name="epc_new">New EPC</string>
+    <string name="pwd_title">Password</string>
+    <string name="pwd_type">Password Type</string>
+    <string name="pwd_type_prompt">Choose a Password Type</string>
+    <string name="pwd_new">New Password</string>
+    <string name="lock_title">Lock</string>
+    <string name="lock_memory">Memory Space</string>
+    <string name="lock_action">Action</string>
+    <string name="lock_mem_prompt">Choose a Memory Space</string>
+    <string name="lock_act_prompt">Choose an Action</string>
+    <string name="kill_title">Kill</string>
+    <string name="pwd_submit">Set</string>
+    <string name="lock_submit">Set</string>
+    <string name="kill_submit">Kill</string>
+    <string name="nxp_title">NXP Command</string>
+    <string name="nxp_submit">Set</string>
+    <string name="nxp_conf">Configuration</string>
+    <string name="nxp_cmd">Command</string>
+    <string name="nxp_cmd_prompt">Choose a NXP Command</string>
+    <string name="dlg_epc_length_title">EPC Length Error</string>
+    <string name="dlg_epc_length_message">The EPC length must between 1 to 27</string>
+    <string name="dlg_epc_new_title">New EPC Error</string>
+    <string name="dlg_epc_new_message">The length of the new EPC must correspond to the EPC Length</string>
+    <string name="dlg_lock_title">Lock Tag Error</string>
+    <string name="dlg_pwd_title">Change Password Error</string>
+    <string name="dlg_kill_title">Kill Tag Error</string>
+    <string name="cfg_title">MTI MINI ME Configuration</string>
+    <string name="cfg_mod_conf">Module Configuration</string>
+    <string name="cfg_region">Region</string>
+    <string name="cfg_dlg_region_title">Choose a Region</string>
+    <string name="cfg_tag_mode">Tag Mode</string>
+    <string name="cfg_dlg_tage_mode_title">Choose a Tag Mode</string>
+    <string name="cfg_rf_conf">RF Configuration</string>
+    <string name="cfg_pwr_level">Power Level</string>
+    <string name="cfg_sen">Sensitivity</string>
+    <string name="cfg_gen2">Gen2 Configuration</string>
+    <string name="cfg_link_freq">Link Frequency</string>
+    <string name="cfg_session">Session</string>
+    <string name="cfg_coding">Coding</string>
+    <string name="cfg_q_begin">Q_Begin</string>
+    <string name="btn_set">Set</string>
+    <string name="btn_get">Get</string>
+    <string name="about_title">MTI MINI ME RFID Module</string>
+    <string name="about_company">Manufacturer</string>
+    <string name="about_company_sum">Microelectronic Technology Inc.</string><string name="about_address">Address</string>
+    <string name="about_address_sum">No. 1, Innovation Road II, Hsinchu 300, Taiwan</string><string name="about_tel">Phone Number</string>
+    
+    <string name="about_tel_sum">886-3-577-3335</string>
+    <string name="about_web">Web Site</string>
+    <string name="about_web_sum">http://www.mti.com.tw</string>
+    <string name="about_sw_ver">Software Version</string>
+    <string name="about_sw_ver_sum">1.5.3</string>
+    <string name="cfg_inventory_times">Scan Times</string>
+    <string name="nxp_trigger">Trigger</string>
+    <string name="cfg_misc">Miscellaneous</string>
+    <string name="cfg_web_url">Web Url</string>
+    <string name="cfg_sleep_mode">Sleep Mode</string>
+    <string name="cfg_sleep_mode_sum">To save more battery, but operation time will be longer</string><string name="about_reader_sn">Reader S/N</string>
+    <string name="tid_title">TID</string>
+    <string name="tid_read_submit">Read</string>
+    <string name="tid_write_submit">Write</string>
+    <string name="tid_data">Data</string><string name="user_title">User</string><string name="user_read_submit">Read</string>
+    <string name="user_write_submit">Write</string>
+    
+    <string name="user_data">Data</string>
+    
+    <string name="epc_length_hint">Enter EPC length between 1 to 27</string>
+    <string name="cfg_tag_mem">Tag Memory Configuration</string>
+    <string name="cfg_tid_length">TID Memory Length</string>
+    <string name="cfg_user_length">User Memory Length</string>
+    <string name="dlg_read_tid_title">Read TID Memory Bank Error</string>
+    <string name="dlg_write_tid_title">Write TID Memory Bank Error</string>
+    <string name="dlg_read_user_title">Read User Memory Bank Error</string>
+    <string name="dlg_write_user_title">Write User Memory Bank Error</string>
+    
+    
+    
+</resources>

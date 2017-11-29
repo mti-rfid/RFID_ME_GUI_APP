@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="cfg_root"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<Preference android:key="cfg_title"
+	    android:selectable="false"
+		android:layout="@layout/pref_title">
+	</Preference>
+	
+	<PreferenceCategory android:key="cfg_mod_conf"
+		android:title="@string/cfg_mod_conf">
+		<ListPreference android:title="@string/cfg_region"
+			android:key="cfg_region"
+			android:entryValues="@array/cfg_region"
+			android:entries="@array/cfg_region"
+			android:dialogTitle="@string/cfg_dlg_region_title"
+			android:selectable="false">
+		</ListPreference>
+		<ListPreference android:dialogTitle="@string/cfg_dlg_tage_mode_title"
+			android:title="@string/cfg_tag_mode"
+			android:key="cfg_tag_mode"
+			android:entryValues="@array/cfg_tag_mode"
+			android:entries="@array/cfg_tag_mode"
+			android:selectable="false">
+		</ListPreference>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="cfg_rf_conf"
+		android:title="@string/cfg_rf_conf">
+		<EditTextPreference android:key="cfg_pwr_level"
+			android:title="@string/cfg_pwr_level"
+			android:dialogTitle="@string/cfg_pwr_level"
+			android:hint="Enter power level between 5 to 18 dBm"
+			android:inputType="number"
+			android:maxLength="2">
+		</EditTextPreference>
+		<EditTextPreference android:key="cfg_sen"
+			android:title="@string/cfg_sen"
+			android:dialogTitle="@string/cfg_sen"
+			android:hint="Enter sensivity between -84 to -48 dBm"
+			android:maxLength="3"
+			android:inputType="numberSigned">
+		</EditTextPreference>
+	</PreferenceCategory><PreferenceCategory android:key="cfg_gen2"
+	    android:title="@string/cfg_gen2">
+		<ListPreference android:entryValues="@array/cfg_link_frequency"
+		    android:title="@string/cfg_link_freq"
+		    android:dialogTitle="@string/cfg_link_freq"
+		    android:entries="@array/cfg_link_frequency"
+		    android:key="cfg_link_freq">
+		</ListPreference>
+		<ListPreference android:entryValues="@array/cfg_session"
+		    android:title="@string/cfg_session"
+		    android:dialogTitle="@string/cfg_session"
+		    android:entries="@array/cfg_session"
+		    android:key="cfg_session">
+		</ListPreference>
+		<ListPreference android:entryValues="@array/cfg_coding"
+		    android:title="@string/cfg_coding"
+		    android:dialogTitle="@string/cfg_coding"
+		    android:entries="@array/cfg_coding"
+		    android:key="cfg_coding">
+		</ListPreference>
+		<EditTextPreference android:title="@string/cfg_q_begin"
+		    android:key="cfg_q_begin"
+		    android:dialogTitle="@string/cfg_q_begin"
+		    android:inputType="number">
+		</EditTextPreference>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:key="cfg_tag_mem"
+	    android:title="@string/cfg_tag_mem">
+		<EditTextPreference android:key="cfg_tid_length" 
+		    android:title="@string/cfg_tid_length" 
+		    android:dialogTitle="@string/cfg_tid_length"
+		    android:inputType="number"/>
+		<EditTextPreference android:key="cfg_user_length" 
+		    android:title="@string/cfg_user_length" 
+		    android:dialogTitle="@string/cfg_user_length"
+		    android:inputType="number"/>
+	</PreferenceCategory>
+
+	<PreferenceCategory android:key="cfg_misc"
+	    android:title="@string/cfg_misc">
+		<CheckBoxPreference android:key="cfg_sleep_mode"
+		    android:title="@string/cfg_sleep_mode"
+		    android:summary="@string/cfg_sleep_mode_sum"/>
+		<EditTextPreference android:key="cfg_inventory_times"
+		    android:title="@string/cfg_inventory_times"
+		    android:dialogTitle="@string/cfg_inventory_times"
+		    android:inputType="number">
+		</EditTextPreference>
+		<EditTextPreference android:key="cfg_web_url"
+		    android:dialogTitle="@string/cfg_web_url"
+		    android:title="@string/cfg_web_url" 
+		    android:inputType="textUri"/>
+	</PreferenceCategory>
+
+	
+	
+</PreferenceScreen>

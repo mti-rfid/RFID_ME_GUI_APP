@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:scrollbars="vertical" android:scrollbarStyle="insideOverlay">
+
+	<ScrollView
+	    android:id="@+id/scrollView"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+
+	    <LinearLayout
+	        android:id="@+id/scrollLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" >
+
+	        <FrameLayout
+	            android:id="@+id/tagidLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" >
+
+	            <TextView
+	                android:id="@+id/tv_tagid"
+	                style="@style/TextViewFontSmall" />
+	        </FrameLayout>
+
+	        <View style="@style/dividerLine" />
+
+	        <LinearLayout
+	            android:id="@+id/epcLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/epcTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_epctitle"
+	                    style="@style/TextViewFontSmall.3wt"
+	                    android:text="@string/epc_title" />
+
+	                <Button
+	                    android:id="@+id/btn_epc"
+	                    style="@style/ButtonFontSmall"
+	                    android:onClick="onEpcClick"
+	                    android:text="@string/epc_submit" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/epcLengthLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_epclength"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/epc_length" />
+
+                    <!-- Mod by Wayne for EPC length can't be edited bug, 2017-11-17 -->
+	                <EditText
+	                    android:id="@+id/et_epclength"
+	                    style="@style/EditTextFontSmall"
+	                    android:hint="@string/epc_length_hint"
+	                    android:maxLength="2"
+	                    android:inputType="number" >
+                    <!--
+                    <EditText
+	                    android:id="@+id/et_epclength"
+	                    style="@style/EditTextFontSmall"
+	                    android:hint="@string/epc_length_hint"
+	                    android:maxLength="2"
+	                    android:digits="true" >
+                    -->
+                    <!-- End by Wayne for EPC length can't be edited bug, 2017-11-17 -->
+	                    <requestFocus />
+	                </EditText>
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/pecNewLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_epcnew"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/epc_new" />
+
+	                <EditText
+	                    android:id="@+id/et_epcnew"
+	                    style="@style/EditTextFontSmall" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+
+	        <LinearLayout
+	            android:id="@+id/pwdLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/pwdTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_pwd"
+	                    style="@style/TextViewFontSmall.3wt"
+	                    android:text="@string/pwd_title" />
+
+	                <Button
+	                    android:id="@+id/btn_pwd"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/pwd_submit" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/pwdTypeLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_pwdtype"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/pwd_type" />
+
+	                <Spinner
+	                    android:id="@+id/sp_pwdtype"
+	                    style="@style/SpinnerFontSmall"
+	                    android:prompt="@string/pwd_type_prompt" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/pwdNewLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_pwdnew"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/pwd_new" />
+
+	                <EditText
+	                    android:id="@+id/et_pwdnew"
+	                    style="@style/EditTextFontSmall"
+	                    android:digits=" 0123456789abcdefABCDEF"
+	                    android:maxLength="8"
+	                    android:inputType="textPassword" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+	        
+	        <LinearLayout
+	            android:id="@+id/tidLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/tidTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_tidtitle"
+	                    style="@style/TextViewFontSmall.2wt"
+	                    android:text="@string/tid_title" />
+
+	                <Button
+	                    android:id="@+id/btn_tid_read"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/tid_read_submit" />
+
+	                <Button
+	                    android:id="@+id/btn_tid_write"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/tid_write_submit" />
+	                </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/tidDataLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_tiddata"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/tid_data" />
+	                
+	                <EditText
+	                    android:id="@+id/et_tiddata"
+	                    style="@style/EditTextFontSmall"
+	                    android:digits=" 0123456789abcdefABCDEF"
+	                    android:gravity="top|left"
+	                    android:singleLine="false" 
+	                    android:lines="2" />
+	            </LinearLayout>
+
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+	        
+	        <LinearLayout
+	            android:id="@+id/userLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/userTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_usertitle"
+	                    style="@style/TextViewFontSmall.2wt"
+	                    android:text="@string/user_title" />
+
+	                <Button
+	                    android:id="@+id/btn_user_read"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/user_read_submit" />
+
+	                <Button
+	                    android:id="@+id/btn_user_write"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/user_write_submit" />
+	                </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/userDataLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_userdata"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/user_data" />
+	                
+	                <EditText
+	                    android:id="@+id/et_userdata"
+	                    style="@style/EditTextFontSmall"
+	                    android:digits=" 0123456789abcdefABCDEF"
+	                    android:gravity="top|left"
+	                    android:singleLine="false" 
+	                    android:lines="2" />
+	            </LinearLayout>
+
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+	        
+	        <LinearLayout
+	            android:id="@+id/lockLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/lockTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_locktitle"
+	                    style="@style/TextViewFontSmall.3wt"
+	                    android:text="@string/lock_title" />
+
+	                <Button
+	                    android:id="@+id/btn_lock"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/lock_submit" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/lockMemLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_lockmemory"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/lock_memory" />
+
+	                <Spinner
+	                    android:id="@+id/sp_lockmemory"
+	                    style="@style/SpinnerFontSmall"
+	                    android:prompt="@string/lock_mem_prompt" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/lockActLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_lockaction"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/lock_action" />
+
+	                <Spinner
+	                    android:id="@+id/sp_lockaction"
+	                    style="@style/SpinnerFontSmall"
+	                    android:prompt="@string/lock_act_prompt" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+
+	        <LinearLayout
+	            android:id="@+id/killLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/killTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_killtitle"
+	                    style="@style/TextViewFontSmall.3wt"
+	                    android:text="@string/kill_title" />
+
+	                <Button
+	                    android:id="@+id/btn_kill"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/kill_submit" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+
+	        <LinearLayout
+	            android:id="@+id/nxpLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+
+	            <LinearLayout
+	                android:id="@+id/nxpTitleLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:orientation="horizontal" >
+
+	                <TextView
+	                    android:id="@+id/tv_nxptitle"
+	                    style="@style/TextViewFontSmall.2wt"
+	                    android:text="@string/nxp_title" />
+
+	                <Button
+	                    android:id="@+id/btn_nxp"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/nxp_submit" />
+
+	                <Button
+	                    android:id="@+id/btn_nxp_trigger"
+	                    style="@style/ButtonFontSmall"
+	                    android:text="@string/nxp_trigger" />
+	            </LinearLayout>
+
+	            <LinearLayout
+	                android:id="@+id/nxpCmdLayout"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+
+	                <TextView
+	                    android:id="@+id/tv_nxpcmd"
+	                    style="@style/TextViewFontSmall.1wt"
+	                    android:text="@string/nxp_cmd" />
+
+	                <Spinner
+	                    android:id="@+id/sp_nxpcmd"
+	                    style="@style/SpinnerFontSmall"
+	                    android:prompt="@string/nxp_cmd_prompt" />
+	            </LinearLayout>
+	        </LinearLayout>
+
+	        <View style="@style/dividerLine" />
+
+	    </LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

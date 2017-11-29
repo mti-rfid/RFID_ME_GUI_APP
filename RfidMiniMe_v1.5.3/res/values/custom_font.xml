@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="TextViewFontLarge"
+		parent="@android:style/TextAppearance.Large">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">match_parent</item>
+    	<item name="android:padding">7dp</item>
+    </style>
+	<style name="TextViewFontLarge.3wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">3</item>
+    </style>
+	<style name="TextViewFontLarge.2wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">2</item>
+    </style>
+	<style name="TextViewFontLarge.1wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+    </style>
+	<style name="EditTextFontLarge"
+		parent="@android:style/TextAppearance.Large">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:background">#ff242424</item>
+    </style>
+	<style name="ButtonFontLarge"
+		parent="@android:style/TextAppearance.Large">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+    </style>
+	<style name="SpinnerFontLarge"
+		parent="@android:style/Widget.Holo.Spinner">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+    </style>
+	<style name="TextViewFontSmall"
+		parent="@android:style/TextAppearance.Small">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">match_parent</item>
+    	<item name="android:padding">7dp</item>
+    </style>
+	<style name="TextViewFontSmall.3wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">3</item>
+    </style>
+	    	<style name="TextViewFontSmall.2wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">2</item>
+    </style>
+	<style name="TextViewFontSmall.1wt">
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+    </style>
+	<style name="EditTextFontSmall"
+		parent="@android:style/TextAppearance.Small">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">2</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:background">#ff343434</item>
+    </style>
+	<style name="ButtonFontSmall"
+		parent="@android:style/TextAppearance.Small">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">1</item>
+    </style>
+	<style name="SpinnerFontSmall"
+		parent="@android:style/Widget.Holo.Spinner">
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:layout_weight">2</item>
+    </style>
+    <style name="dividerLine">
+    	<item name="android:layout_height">2dp</item>
+    	<item name="android:layout_width">match_parent</item>
+    	<item name="android:padding">40dp</item>
+    	<item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="outlineLayout">
+    	<item name="android:background">#ff141414</item>
+    </style>
+</resources>
