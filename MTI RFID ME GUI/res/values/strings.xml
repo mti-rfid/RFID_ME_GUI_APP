@@ -59,11 +59,7 @@
     <string name="about_web">Web Site</string>
     <string name="about_web_sum">http://www.mti.com.tw</string>
     <string name="about_sw_ver">Software Version</string>
-<<<<<<< HEAD:MTI RFID ME GUI/res/values/strings.xml
-    <string name="about_sw_ver_sum">1.5.0</string>
-=======
     <string name="about_sw_ver_sum">1.5.1</string>
->>>>>>> v1.5.1 release:MTI RFID ME GUI/res/values/strings.xml
     <string name="cfg_inventory_times">Scan Times</string>
     <string name="nxp_trigger">Trigger</string>
     <string name="cfg_misc">Miscellaneous</string>
